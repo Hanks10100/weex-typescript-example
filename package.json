@@ -28,6 +28,7 @@
     "style-loader": "^0.23.0",
     "ts-loader": "^4.5.0",
     "typescript": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "vue": "^2.5.17",
     "vue-loader": "^15.2.6",
     "vue-style-loader": "^4.1.1",

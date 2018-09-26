@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -10,6 +11,9 @@ module.exports = {
     filename: '[name].min.js'
   },
   mode: 'production',
+  optimization: {
+    minimize: false
+  },
   resolve: {
     extensions: ['.ts', '.js', '.json']
   },
@@ -42,5 +46,13 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new UglifyJsPlugin(),
+    new webpack.BannerPlugin({
+      raw: true,
+      entryOnly: true,
+      banner: '// { "framework": "Vue" }\n"use weex:vue";\n'
+    })
+  ]
 }

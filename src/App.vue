@@ -8,6 +8,7 @@
   import Vue from 'vue'
   import { whatever } from './utils/helper'
   export default Vue.extend({
+    el: 'body', // only for root component
     data () {
       return {
         title: 'Typescript'
