@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "module": "es2015",
+    "target": "es5",
+    "removeComments": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "lib": ["es2015", "scripthost"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
