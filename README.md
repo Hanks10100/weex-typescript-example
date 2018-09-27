@@ -17,3 +17,23 @@ npm install
 ```bash
 npm run build
 ```
+
+Then the compiled file will be generated to the `dist/` folder.
+
+3. Start a local server
+
+```bash
+npm run serve
+```
+
+It will start a local server which listens *12580* port, you can visit the js bundle by `http://localhost:12580/dist/index.min.js`. If you want visit this file on your phone, you should replace the `localhost` to your IP address.
+
+> For some apps, you may have to pass special query to identify the url as a weex page, such as `http://tb.cn?_wx_tpl=http://localhost:12580/dist/index.min.js`.
+
+**Short Cut**:
+
+```bash
+npm start
+```
+
+Indeed, it just run `npm run build` and `npm run serve`.
