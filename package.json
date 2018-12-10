@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack --watch",
-    "serve": "serve -p 2333",
+    "serve": "serve -p 12580",
     "start": "npm run build && npm run serve"
   },
   "keywords": [
